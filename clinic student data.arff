@@ -1,0 +1,133 @@
+@relation learn-weka.filters.unsupervised.attribute.Remove-R10-weka.filters.supervised.instance.Resample-B1.0-S1-Z10.0
+
+@attribute AGE {18,19,20,21,22,23,24,25,26,28,30,34,35,37,39,40,47}
+@attribute GENDER {M,F}
+@attribute BLOCK numeric
+@attribute DEPARTMENT {Acc, Agri, Bio, BioT, Civil, Chem,CS, Eco, Engi, Geo, Geolg, IS, IT, Law, Mark, Maths, Medi, Mgt, Phys, SpoS, Stat, Tour, Vet}
+@attribute ToothPain {yes,no}
+@attribute EyeSensation {yes,no}
+@attribute AbdominalBowll {yes,no}
+@attribute LucrtionPain {yes,no}
+@attribute EarPain {yes,no}
+@attribute Fever {yes,no}
+@attribute Headache {yes,no}
+@attribute JointPain {yes,no}
+@attribute ProCough {yes,no}
+@attribute EpiPain {yes,no}
+@attribute EpiBurning {yes,no}
+@attribute KneePain {yes,no}
+@attribute nonProCough {yes,no}
+@attribute SkinITching {yes,no}
+@attribute Tonsil {yes,no}
+@attribute SkinInfect {yes,no}
+@attribute LossOFApptiet {yes,no}
+@attribute ChestPain {yes,no}
+@attribute UrinationBurnning {yes,no}
+@attribute AbdominalCrump {yes,no}
+@attribute Diharria {yes,no}
+@attribute DryCough {yes,no}
+@attribute RESULT {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y}
+@attribute YEAR {1,2,3,4,5,6,7}
+
+@data
+
+25,M,32,Agri,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,W,2
+19,F,24,IT,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,J,2
+25,M,31,Geolg,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+20,M,26,CS,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+24,M,34,Vet,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,5
+20,F,24,Mgt,no,no,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,3
+21,M,26,CS,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,?,1
+22,F,31,CS,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,E,2
+21,M,31,Acc,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,E,3
+23,M,31,Mgt,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,yes,no,?,3
+20,F,29,Bio,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,?,1
+20,F,24,Agri,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,E,2
+23,F,25,Stat,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,4
+25,M,31,CS,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+22,M,34,Vet,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,O ,2
+20,M,26,CS,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+23,M,30,SpoS,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,Q,3
+21,M,31,CS,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,?,2
+22,M,32,SpoS,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,E,2
+20,F,28,Agri,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+20,M,31,IS,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,3
+18,M,35,Mgt,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,E,1
+20,F,29,CS,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,K,1
+20,M,35,Mark,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,K,1
+21,M,35,Agri,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,2
+21,F,26,IT,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,4
+22,F,23,Bio,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,N,4
+22,M,33,Vet,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,?,4
+22,M,30,Bio,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,V,4
+20,F,24,Agri,no,no,no,no,no,yes,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,S,2
+20,M,30,Stat,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,?,2
+20,M,35,BioT,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,1
+21,M,35,Mark,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,N,1
+22,M,35,Mgt,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+20,F,25,Stat,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,4
+21,M,31,IT,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,?,3
+22,M,31,CS,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,U,3
+20,F,24,IT,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,?,2
+21,M,32,Eco,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,N,2
+21,M,33,Vet,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,?,4
+21,M,31,Acc,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,3
+19,M,35,Acc,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,E,1
+23,M,33,Vet,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,E,4
+22,M,34,Eco,no,no,no,no,no,yes,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,P,2
+20,M,33,Agri,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,A,2
+21,F,25,Bio,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,G,4
+18,F,28,Agri,no,no,no,no,no,yes,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,P,1
+19,M,26,IS,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+22,F,25,Bio,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,L,4
+20,F,29,Acc,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,?,1
+18,F,29,Stat,no,no,no,no,no,yes,yes,no,no,no,no,no,yes,no,no,no,no,yes,no,no,no,no,P,1
+20,M,26,Bio,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,1
+21,M,30,CS,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,yes,no,no,no,no,S,4
+19,M,26,IT,no,yes,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,J,1
+19,F,26,Bio,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,L,3
+19,F,24,Agri,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,?,2
+21,F,25,IT,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,4
+21,M,35,Mark,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,L,1
+21,F,25,Geolg,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,L,3
+20,F,28,Vet,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,L,2
+21,M,34,Agri,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,A,2
+21,M,31,Bio,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,A,2
+19,M,31,Chem,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,A,2
+20,M,40,Medi,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,?,1
+21,M,31,Chem,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,H,3
+20,M,34,Eco,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+20,F,24,SpoS,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+23,M,31,Mgt,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,A,5
+20,M,34,Acc,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,T,3
+21,F,25,Mgt,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,C,3
+19,M,32,IS,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,N,2
+19,M,31,CS,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+37,F,31,Stat,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,?,?
+20,M,26,IS,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,B,1
+21,F,29,Acc,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+22,M,32,IS,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,O,3
+19,M,35,Phys,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,L,1
+19,F,29,Maths,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+21,M,35,Maths,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,G,2
+20,F,28,Vet,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,C,2
+19,F,29,SpoS,no,no,no,no,no,yes,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,L,1
+21,M,3,Geolg,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,M,4
+24,M,35,Eco,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,H,1
+20,F,24,BioT,no,no,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,L,4
+20,F,28,Maths,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+20,F,28,CS,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,1
+22,F,28,Eco,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,L,2
+21,M,37,Mgt,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,B,2
+20,M,31,Chem,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,J,2
+20,M,31,Chem,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,J,2
+20,F,25,CS,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,A,5
+21,M,34,Vet,no,yes,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,2
+21,F,30,Maths,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,?,3
+19,M,35,Mgt,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,?,?
+20,M,35,Eco,no,no,no,no,no,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,A,1
+20,F,24,Agri,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,N,2
+20,M,31,CS,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,L,2
+24,M,31,Chem,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,N,3
+20,M,34,IT,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,M,2
+20,M,29,IT,no,no,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,P,1
